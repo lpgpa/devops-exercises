@@ -360,6 +360,7 @@ It contains useful information about the processes that are currently running, i
 
 <details>
 <summary>What makes /proc different from other filesystems?</summary><br><b>
+/proc is a special virtual filesystem in Unix-like operating systems, including Linux, that provides information about processes and system resources.
 </b></details>
 
 <details>
@@ -433,6 +434,10 @@ Its a bit that only allows the owner or the root user to delete or modify the fi
 
 <details>
 <summary>What is sudo? How do you set it up?</summary><br><b>
+sudo is a command-line utility in Unix-like operating systems that allows users to run programs with the privileges of another user, usually the superuser (root). It stands for "superuser do.
+
+The sudo program is installed by default in almost all Linux distributions. If you need to install sudo in Debian/Ubuntu, use the command apt-get install sudo
+
 </b></details>
 
 <details>
@@ -1649,7 +1654,7 @@ There are 2 configuration files, which stores users information
 <details>
 <summary>Which file stores users passwords? Is it visible for everyone?</summary><br>
 
-`/etc/shadow` file holds the passwords of the users in encryted format. NO, it is only visible to the `root` user
+`/etc/shadow` file holds the passwords of the users in encrypted format. NO, it is only visible to the `root` user
 </details>
 
 <details>
@@ -2138,6 +2143,20 @@ This is a good article about the topic: https://ops.tips/blog/how-linux-creates-
 
 <details>
 <summary>You executed a script and while still running, it got accidentally removed. Is it possible to restore the script while it's still running?</summary><br><b>
+It is possible to restore a script while it's still running if it has been accidentally removed. The running script process still has the code in memory. You can use the /proc filesystem to retrieve the content of the running script.
+1.Find the Process ID by running 
+```
+ps aux | grep yourscriptname.sh
+```
+Replace yourscriptname.sh with your script name.
+2.Once you have the PID, you can access the script's memory through the /proc filesystem. The script will be available at /proc/<PID>/fd/, where <PID> is the process ID of the running script. Typically, the script's file descriptor is 0 or 1.
+
+You can copy the script content to a new file using the cp command:
+```
+cp /proc/<PID>/fd/0 /path_to_restore_your_file/yourscriptname.sh
+```
+Replace <PID> with the actual PID of the  script and /path_to_restore_your_file/yourscriptname.sh with the path where you want to restore the script.
+
 </b></details>
 
 <a name="questions-linux-memory"></a>

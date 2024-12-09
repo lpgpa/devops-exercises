@@ -1,6 +1,6 @@
 ## AWS - Cloud Practitioner
 
-A summary of what you need to know for the exam can be found [here](https://codingshell.com/aws-cloud-practitioner)
+A summary of what you need to know for the exam can be found [here](https://aws.amazon.com/certification/certified-cloud-practitioner/)
 
 #### Cloud 101
 
@@ -165,8 +165,8 @@ Read more about instance types [here](https://docs.aws.amazon.com/AWSEC2/latest/
 <details>
 <summary>True or False? The following are instance types available for a user in AWS:
 
-  * Compute optimizied
-  * Network optimizied
+  * Compute optimized
+  * Network optimized
   * Web optimized</summary><br><b>
 
 False. From the above list only compute optimized is available.
