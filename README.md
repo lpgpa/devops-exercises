@@ -103,6 +103,17 @@
 <!-- prettier-ignore-end -->
 <!-- ALL-TOPICS-LIST:END -->
 
+## DevOps Applications
+
+<table>
+<tr>
+  <td align="center"><a href="https://play.google.com/store/apps/details?id=com.codingshell.kubeprep"><img src="images/apps/kubeprep.png" width="200px;" height="300px;" alt="KubePrep"/><br /><b>KubePrep</b></a></td>
+  <td align="center"><a href="https://play.google.com/store/apps/details?id=com.codingshell.linuxmaster"><img src="images/apps/linux_master.png" width="200px;" height="300px;" alt="Linux Master"/><br /><b>Linux Master</b></a></td>
+  <td align="center"><a href="https://play.google.com/store/apps/details?id=com.codingshell.system_design_hero"><img src="images/apps/system_design_hero.png" width="200px;" height="300px;" alt="Sytem Design Hero"/><br /><b>System Design Hero</b></a></td>
+</tr>
+</table>
+
+
 ## Network
 
 <details>
@@ -1615,6 +1626,15 @@ When you use a function (`YEAR(purchased_at)`) it has to scan the whole database
 
 <details>
 <summary>What components/projects of OpenStack are you familiar with?</summary><br><b>
+I’m most familiar with several core OpenStack components:
+
+- Nova for compute resource provisioning, including VM lifecycle management.
+- Neutron for networking, focusing on creating and managing networks, subnets, and routers.
+- Cinder for block storage, used to attach and manage storage volumes.
+- Keystone for identity services, handling authentication and authorization.
+
+I’ve implemented these in past projects, configuring them for scalability and security to support multi-tenant environments.
+ 
 </b></details>
 
 <details>

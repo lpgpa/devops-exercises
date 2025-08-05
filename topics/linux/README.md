@@ -627,6 +627,8 @@ The kernel is part of the operating system and is responsible for tasks like:
 
 <details>
 <summary>What is a Linux kernel module and how do you load a new module?</summary><br><b>
+
+A Linux kernel module is a piece of code that can be dynamically loaded into the kernel to extend its functionality. These modules are typically used to add support for hardware devices, filesystems, or system calls. The kernel itself is monolithic, but with modules, its capabilities can be extended without having to reboot the system or recompile the entire kernel.
 </b></details>
 
 <details>
@@ -2247,6 +2249,14 @@ $OLDPWD
 
 <details>
 <summary>How to count the number of lines in a file? What about words?</summary><br><b>
+
+For these we can use `wc` command.
+
+1. To count the number of lines in file
+```wc -l```
+
+2. To count the number of words in file
+```wc -w```
 </b></details>
 
 <details>
